@@ -5,8 +5,6 @@ window.addEventListener("load", function(event) {
     if(url.indexOf('order_id')>=0){
         payWithPaydunya();
     }
-
-
 });
 
 function payWithPaydunya(btn) {
@@ -33,7 +31,7 @@ function payWithPaydunya(btn) {
             alert("Unknown Error ==> ", error.toString());
         },
         onUnsuccessfulResponse: function (jsonResponse) {
-            console.log("Unsuccessful response ==> " + jsonResponse);
+            console.log("Unsuccessful response ==> " + jsonResponse.toString());
         },
         onClose: function() {
             console.log("Close");

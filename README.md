@@ -24,7 +24,7 @@ With this PAYDUNYA Woocommerce Payment Gateway plugin, you will be able to accep
 
 - __Mobile Wallet__
 
-= Note =
+## Note
 
 This plugin is meant to be used by merchants in Senegal.
 
@@ -36,7 +36,7 @@ This plugin is meant to be used by merchants in Senegal.
 - 	__Send SMS notification__ to customer on successful payment. This feature has to be enabled and configured before it will work, you will need a SMS API.
 
 
-= Suggestions / Feature Request =
+## Suggestions / Feature Request
 
 If you have suggestions or a new feature request, feel free to get in touch with us via email paydunya@paydunya.com
 

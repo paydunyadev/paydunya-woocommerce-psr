@@ -4,7 +4,7 @@
     Plugin Name: Passerelle de paiement PAYDUNYA PSR pour WooCommerce
     Plugin URI: https://paydunya.com/developers/wordpress
     Description: Intégrer facilement des paiements via Orange Money dans votre site WooCommerce et commencer à accepter les paiements depuis le Sénégal.
-    Version: 1.2
+    Version: 1.2.1
     Author: PAYDUNYA
     Author URI: https://paydunya.com
 */

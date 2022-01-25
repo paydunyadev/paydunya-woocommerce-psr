@@ -1,14 +1,24 @@
-
 window.addEventListener("load", function(event) {
-    var form = document.getElementsByClassName("checkout");
-    var url = window.location.href
+    const url = window.location.href
     if(url.indexOf('order_id')>=0){
-        payWithPaydunya();
+
+        const fullName = document.getElementById('billing_first_name').value + ' ' + document.getElementById('billing_last_name').value,
+            email = document.getElementById('billing_email').value,
+            phone = document.getElementById('billing_phone').value
+
+        const submitButton = document.querySelector("form[name=checkout] button[type=submit]")
+
+        submitButton.setAttribute('data-fullname', fullName)
+        submitButton.setAttribute('data-email', email)
+        submitButton.setAttribute('data-phone', phone)
+
+        payWithPaydunya("form[name=checkout] button[type=submit]");
+
     }
 });
 
 function payWithPaydunya(btn) {
-    event.preventDefault()
+
     PayDunya.setup({
         selector: $(btn),
         url: wnm_custom.template_url+"/wp-json/wp/v1/paydunya-api",
